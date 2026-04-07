@@ -1,0 +1,458 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+\usepackage{comment}
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{ALI AMJAD}
+\tagline{LEFT \$140K FOR BUILDING SOMETHING GREAT. VERY WEIRD BUT I DON'T HAVE A KILLER IDEA, BUT I'M CONFIDENT THAT I'LL FIGURE OUT. ALL I HAVE IS MYSELF WHO IS $\infty$\% ALL IN}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+%\photoR{2.5cm}{download}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+%   \phone{000-00-0000}
+% \email{ali.amjad52114@gmail.com}
+   %\email{aamjad@mun.ca}
+  % \phone{709-765-6030}
+  %\mailaddress{815 Michel Rd , BC V0B1H0,  Canada}
+  %\location{Elkford,BC}
+  %\linkedin{https://www.linkedin.com/in/ali-amjad-capm-a80732137/}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+
+\printinfo{}{I understand this is not a conventional software resume. Rather than optimizing for a specific toolchain, my goal is to communicate all my life experiences.  }
+\printinfo{}{My background is rooted in owning real-world systems end-to-end—where failures are costly and reliability matters, which has shaped how I approach }
+
+\printinfo{}{problems, experimentation, and decision-making.}
+
+}
+
+
+
+
+
+  
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Electrical Engineer }{Glencore - Elk Valley Resources}{Jul 2024 - Present}{Elkford, BC}
+\begin{itemize}
+
+%\item Continued responsibilities from Teck Resources through ownership transition, ensuring uninterrupted support and improvements to plant site control systems.
+\item Lead and supervise contractors (electrical/instrumentation technicians and journeypersons), ensuring PLC infrastructure upgrades are executed safely, efficiently, and in compliance with site standards
+%\item Lead troubleshooting, configuration, and upgrades of controlNET and Ethernet networks.
+\item Expertly diagnose and resolve complex automation issues, ensuring minimal downtime and efficient operations, investigations to find root causes, and make recommendations to prevent further failures
+%\item Manage control system budgets, plan resourcing, and coordinate cross-departmental efforts with operations, maintenance, and projects to maximize uptime.
+\item Lead RCA investigations for control system incidents, preparing detailed communications and sharing learnings with the broader team to align with best practices.
+\item Develop and implement automation solutions using RSLogix 5000, Studio 5000, and FactoryTalk HMI to meet operational, maintenance, and project requirements, ensuring all control programs function as intended.
+%\item  Train new hires by establishing structured onboarding, job shadowing, and technical training programs to instill company standards and best practices in PLC/HMI programming.
+\item Review electrical and controls engineering drawings, ensuring compliance with company standards and industry best practices, while providing guidance to improve design quality and consistency.
+
+\end{itemize}
+
+\divider
+\cvevent{Electrical Engineer-In-Training}{Teck Resources Limited}{May 2022 - Jul 2024}{Elfkord, BC}
+\begin{itemize}
+%\item Experienced in electrical distribution system design, motor control schematics (MCC), control panel layout and design, adjust relays and controllers, single line diagram, wiring diagrams, loop drawings with P\&ID, transmitters, valves, measuring devices, application software by ladder diagram, technical support etc
+%\item Conduct thorough design reviews and provide engineering support, collaborating with cross-functional teams to deliver high-quality automation solutions
+%\item Created electrical specifications \& designs, loop drawings, trip set point, and alarm management documents
+%\item Developed and implemented automation solutions using RSLogix 5000 and FactoryTalk View, optimizing processes for maximum efficiency 
+\item Experienced in electrical distribution system design, motor control schematics (MCC), control panel layout and design, adjust relays and controllers, single line diagram, wiring diagrams, loop drawings with P\&ID, transmitters, valves, measuring devices, UPS sizing and design, application software by ladder diagram, technical support etc. in industrial control and automation systems according to specifications with safety procedures
+%\item Performed evaluation of control system and instrumentation specifications for projects
+\item Lead projects and perform multiple responsibilities of controls engineering support in parallel and oversee vendor/contractor support when needed.
+%\item Provide technical expertise in consultation, evaluation, recommendation, and development or review of specifications, work scopes, test procedures, alarm response procedures, commissioning plans, and vendor reports.
+
+%\item Enforce change management protocols for control system modifications, while supporting end users in achieving process control objectives safely and effectively
+\item Act as contract manager and supervisor on automation projects, ensuring work is completed safely, productively, and in alignment with project scope and objectives.
+
+\end{itemize}
+
+\divider
+\cvevent{ Machine Learning student }{RBC Bank ( Borealis AI)}{Mar 2021 -- May 2021}{Remote}
+\begin{itemize}
+\item Selected as one of three teams from Memorial University to collaborate with Borealis AI on applied machine learning research.
+\item Designed and trained supervised ML models to classify whale species from acoustic signal data, achieving 92\% classification accuracy.
+\item Contributed to data preprocessing, feature extraction from audio signals, model evaluation, and result analysis.
+\item The project was inspired by prior offshore seismic operations experience, bridging domain knowledge in acoustics with machine learning techniques.
+\end{itemize}
+%\divider
+\cvevent{Electrical \& Automation Intern  }{Glencore - Kidd Operations}{ Oct 2020 -  May 2022}{Timmins, ON}
+\begin{itemize}
+\item Experienced with m340, m580 and Quantum PLCs through various
+projects and attained solid understanding of communication protocols
+such as Modbus, Modbus RTU, Ethernet IP, HART and OPC
+\item Created 25 HMI screens for the mining equipment while providing feedback for troubleshooting 
+\item Developed Engineering Work Orders to provide guidance for installations in the field.Leaded failure analysis investigations to find root causes and make recommendations to prevent further failures
+%\item Assisted in the development, definition and preparation of programs, processes, standards, procedures or methods related to the management of process control \& automation assets
+%\item Participates in developing solutions to technical issues and verifying the implementation of these solutions 
+\end{itemize}
+
+\divider
+
+\cvevent{Process Control Automation Intern  }{Syncrude Canada Ltd}{Jan 2020 -- March 2020}{Fort McMurray, AB}
+\begin{itemize}
+%\item Maintained, monitored and improved the security, reliability and performance of the process control infrastructure assets
+%\item Supported project requirements including proposals, options analysis narratives,engineering and capital cost estimates, drawing documentation, systems design and technical specifications
+\item Completed engineering work packages and material requisition packages with the budget upto \$500k
+%\item Conducted and assisted in conducting project meetings with project stakeholders, including preparation of meeting agenda, meeting minutes, action lists and follow up
+ 
+
+\end{itemize}
+\divider
+
+%%\cvevent{ Tim Horton's} {Team member}{Nov 2016 -- Jan 2020}{St.John's, NL}
+%%\begin{itemize}
+%%\item Completes tasks as part of a team, on which safe workplace is
+%%emphasized, to provide quality service to customers on time
+%%\item Reports the complaints of the customers to the management and
+%%correspond to the customers with patience in either situation
+%%\end{itemize}
+%\cvevent{Mock Interviewer }{Memorial University (MUN) Co-op Office}{Sep 2019 -- Dec 2019}{St.John's, NL}
+%\begin{itemize}
+%\item Conducted interviews as per guidelines provided by Co-op office
+%\item Provided students with constructive feedback 
+%\end{itemize}
+%%\divider
+
+\cvevent{Passive Acoustic Monitoring (PAM) Operator}{Dovre Group}{July 2019 -- September 2019}{St.John's , NL}
+\begin{itemize}
+
+ %\item Monitored a designated area for protected species and implemented any mitigation measures as per project guidelines
+\item Accurately recorded sightings and completed logs associated with daily sighting activities.
+\item Operated, maintained, and troubleshoot PAM equipment on the 3D seismic vessel.Implemented  mitigation measures to avoid loss of more than \$900k as project guidelines
+%\item Provided information to seismic operators regarding compliance with project and regional specific marine mammal mitigation regulations
+%\item Experienced with  m340, m580 and Quantum PLCs through various projects  and attained solid understanding of HART, Foundation Fieldbus, DeviceNet, Modbus, EtherNet IP and OPC
+%\item Prepared Project Document for accuracy and completeness, including Planning Specifications, Preliminary Project Plans, Project Estimates, Project Schedules, Risk Register and other Project related documents.
+
+\end{itemize}
+
+%\cvevent{Project Controls Support}{Vematx}{April 2019 -- June 2019}{Mount Pearl, NL}
+%\begin{itemize}
+
+%\item  Divided down budgeted hours into separate track-able items and input into the schedule using Primavera (P6)
+%\item Developed Control Account Plan, Milestones Documents, Weekly and Monthly progress reports.
+
+%\end{itemize}
+\divider
+%--------------------------
+\cvevent{3D Printing Engineering Student }{Memorial University}{Jan 2019 -- May 2019}{St.John's, NL}
+\begin{itemize}
+\item Modified puppetry designs and transformed them into 3D puppets using Fusion 360 for drama show of audience over 600 people
+\end{itemize}
+\divider
+% \divider
+% \divider
+\cvevent{Engineering Project Assistant Intern}{SubC Imaging}{Sept 2018 -- Dec 2018}{Clarenville, CA}
+ \begin{itemize}
+%\item Developed manufacturing processes by designing and modifying equipment for fabricating, assembling and installing components
+%\item Assisted managers with project tasks and time lines to ensure prompt delivery of \$400K worth projects by using JIRA and MS packages
+\item Designed the wiring layout to facilitate accessibility to DC power,Serial Data Transmission, and Ethernet connections.This project benefited 4 departments by increasing the efficiency 70\%
+\item Prepared final designs, based on receipt of accepted  technical information, along with sketches and instructions and forward to Supervisor for general review and passing on to Drawing Production Section for the preparation of detailed design drawings
+ \end{itemize}
+\divider
+
+
+\cvevent{ Research Assistant Intern }{Memorial Center for Entrepreneurship (MCE) office}{Feb 2018 -- April 2018}{St.John's, NL}
+\begin{itemize}
+\item Assisted in the hiring of the online web platform developers; Explained project objectives to the new team of 5 researchers
+\item Organized an Ideation Session to get concept about designing of the online web platform from 50 professionals of diverse background
+\end{itemize}
+\divider
+%\divider
+
+
+
+%cvsection{Software skills}
+%\cvtag{Microsoft packages \& Linux/Unix } 
+%cvtag{ C++ } \cvtag{ MS packages}
+%cvtag{SolidWorks} \cvtag{Matlab}
+%cvtag{Linux} \cvtag{OrCAD} 
+
+
+
+%-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------
+%\cvsection{Summer Goals}
+%\begin{itemize}
+ %%  \item SQL Programming from Code-Academy
+%\end{itemize}
+
+% \divider
+
+
+
+
+
+
+
+
+
+%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+
+
+\switchcolumn
+
+
+\cvsection{Education}
+\cvevent{ Electrical Engineering}{Memorial University}{Sept 2016 -- April 2022}{}
+\begin{comment}
+\begin{itemize}
+\subsection{School Projects}
+\item Designed an Renewable Energy based charging station for ten electric cars ( Capstone project)
+\item Developed an Intel Galileo based Data Logger to determine two temperatures and power consumption of a refrigerator
+\item Designed, implemented and tested a 120V, 60HZ, 8-0-8V transformer 
+\item Designed a 120Vac to +5Vdc supply with indicators and a USB connector for a cell phone
+\item Designed a PWM charger circuit for a 12V, 7A lead acid battery 
+\item Designed a PIC16F684 based portable emergency light control circuit 
+\item Designed and constructed a circuit to interface the ADC module of AVR micro-controller. Configured the ADC module of ATmega32 micro-controller using Assembly Language$
+%\item Designed an arduino Uno board using Altium Designer 
+%including schematics drawing and routing
+
+
+\end{itemize}
+\end{comment}
+\divider
+
+\cvsection{Achievements}
+\begin{itemize}
+\item {Successfully managed the automation department independently for 8 months, maintaining continuity of operations until a new hire was onboarded}
+\item {When Rockwell specialists were unable to resolve persistent electronic overload issues, I conducted independent research and hands-on experiments, ultimately identifying the root cause and implementing the solution. This achievement earned me an additional performance bonus the same year.}
+\item {As an EIT, I was tasked with modernizing a 1970s relay-based control system. I designed the system architecture, produced engineering drawings, and completed PLC and HMI programming before handing over the fully operational system to plant operations.}
+\item {During my internship, I successfully delivered a full-scale engineering project originally assigned to a senior engineer, completing it ahead of schedule and demonstrating strong initiative and technical capability.}
+\item {Awarded a \$3,000 Entrance Scholarship to Memorial University in recognition of outstanding academic performance.}
+
+\end{itemize}
+\divider
+\cvsection{Certifications}
+
+
+
+\begin{enumerate}
+\item  Certified Project Management Professional (PMP) --2025
+\item  Certified User in Ingition by Inductive Automation --2020
+\item  Certified Associate in Project Management (CAPM) --2019
+\item  Various Rockwell Courses ranging from PLC,HMI programming, Networking, IT/OT best practices, and VFDS --2022-2025
+%\item Construction Safety Training System (CSTS-09) --2019
+%\item Certified Passive Acoustic Monitor (PAM) Operator --2019
+%\item Certified in Domestic Vessel Safety (MED-DVS) --2019
+%\item CAPP offshore medical exam --2019
+%\item ISO 45001 Occupational Health and Safety Management System --2018
+
+
+
+\end{enumerate}
+
+\divider
+\divider
+\divider
+\cvsection{Volunteering     Experience}
+
+%\cvevent{Scholarly Writing Workshop Developer}{Stem Fellowship Science}{Jan 2019--Present}{National Level}
+\cvevent{International Global Coordinator}{Global NL }{Sep 2019 -- Jan 2020}{St.John's, NL}
+\cvevent{Mock Interviewer}{Memorial University}{Sep 2019 -- Jan 2020}{St.John's, NL}
+\cvevent{Branch President}{Stem fellowship MUN Chapter }{June 2019 -- May 2022}{St.John's, NL}
+
+\cvevent{Participant}{Indusrial Problem Solving Workshop }{July--2018}{Halifax,NS}
+
+\begin{itemize}
+\item Hosted by The Atlantic Association for Research in the Mathematical Sciences
+\end{itemize}
+
+\cvevent{Social Media Manager}{European Association of Geo-scientist and Engineers (EAGE) MUN}{Feb 2018 --Dec 2018} {St.John's, NL}
+
+%%\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\divider
+
+
+\cvsection{Publications}
+\begin{itemize}
+\item A systematic literature review of the influence of the university’s environment and support system on the precursors of social entrepreneurial intention of students, Journal of Innovation and Entrepreneurship,2020
+\item Effect of the University on the Social Entrepreneurial Intention of Students,New England Journal of Entrepreneurship,2019
+\item Effect of Memorial University’s Environment\& Support System in Shaping Entrepreneurial Intention of Students,  Journal of Entrepreneurship Education,2018
+
+
+
+
+\end{itemize}
+\divider
+
+\cvsection{Technical Expertise}
+%\cvtag{Microsoft packages \& Linux/Unix } 
+\cvtag{ MS packages}
+%\cvtag{Customer service}\cvtag{Sales}
+\cvtag{ SolidWorks} \cvtag{C++}  \cvtag{Studio 5000} \cvtag{Matlab}
+\cvtag{Rockwell \& Ignition HMI Programming} \cvtag{Rockwell \& Modicon PLC Programming}
+\cvtag{SKM} \cvtag{AutoCAD}\cvtag{ControlExpert}\cvtag{Ignition}
+\cvtag{Aveva PI Historian}\cvtag{Industrail Networks}\cvtag{SEL Relays}
+\cvtag{SKM}\cvtag{Modbus TCP/IP} \cvtag{OPC UA/DA}\cvtag{ControlNet}
+\cvtag{DeviceNet}\cvtag{FieldCare}
+
+\divider
+
+\end{paracol}
+
+%\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+%\cvref{Prof.\ Carlos Bazan}{Memorial University}{cbazan@mun.ca}
+%{230 Elizabeth Ave, St. John's, NL A1C 5S7}
+
+%\divider
+
+%\cvref{Dr.\ Arifusalam Shaikh}{Memorial University}{arifusalams@mun.ca}
+%{230 Elizabeth Ave, St. John's, NL A1C 5S7}
+\newpage
+\cvsection{Design Projects}
+\begin{itemize}
+\item Led the electrical, automation, and instrumentation scope of a booster pump station project, enabling the processing plant to optimize tailings distribution and extend operational uptime. 
+\item Managed the modernization of the old relay-based control system to a modern PLC control system, overseeing all project phases from concept to handover, which enhanced reliability, reduced downtime, and simplified future maintenance.
+\item Led the Motor Control Center (MCC) upgrade, executing design reviews, PLC programming, and system validation to ensure seamless integration and reliable plant performance
+\item Managed the installation,configuration and handover process of E\&H diagnostic software that increased the efficiency of instrument technicians by 30\%.
+\item Led the cross-functional troubleshooting efforts with Rockwell, electrical contractors, and site electricians to resolve electronic overload protection issues, restoring process consistency and aligning mining operations with key production KPIs.
+\item Led electrical/Automation design and implementation of an automation-driven water reuse system, reducing potable water consumption by leveraging tailings water—delivering significant environmental benefits and operational cost savings
+\item Led automation and electrical scopes of the modernization of the legacy control system to a modern Studio 5000-based PLC controller.
+\item Developed engineering work packages for Endress+Hauser instrumentation installations, enhancing process visibility and operator control.
+\item Engineered interlocking logic to synchronize conveyor and feeder operations, ensuring safe and efficient material handling.
+\item Designed automated logic for conveyor water spray systems, integrating alarms via Schneider M340 PLCs, PI-OSI Historian, and Ignition SCADA to improve dust control and operator responsiveness.
+\item Created an engineering work package to remotely monitor alarms(low level, high temperature, low temperature,etc) of a 2500 KVA transformer.
+\item Designed a monitoring system to monitor speed and vibrations of the Hoist ( cage to bring people from underground to the surface).
+\item Designed an infrastructure to monitor air flows and gases (CO \&SO2) detection in the mine. Created a HMI system to monitor the air flows, gases, and alarms underground from the surface.
+\item Created engineering work packages to improve reliability of the Power Distribution Inverse Multiplexer (IMUX) system between buildings, ensuring stable power distribution and system resilience.
+\item Designed a renewable energy–based charging station for ten electric vehicles as a Capstone project, showcasing sustainable infrastructure design and power distribution.  
+\item Developed an Intel Galileo–based data logger to monitor dual temperature points and measure refrigerator power consumption for efficiency analysis.  
+\item Designed, implemented, and tested a 120V, 60Hz, 8-0-8V transformer to validate core electrical design principles and safe voltage conversion.  
+\item Designed a 120Vac to +5Vdc regulated supply with status indicators and a USB connector, enabling reliable cell phone charging.  
+\item Designed a PWM charger circuit for a 12V, 7A lead-acid battery to optimize charging efficiency and battery health.  
+\item Designed a PIC16F684-based portable emergency light control circuit to provide reliable backup lighting in critical scenarios.  
+%\item Designed and constructed a circuit interfacing with the ADC module of an AVR microcontroller, and configured the ATmega32 ADC using Assembly Language for precise analog-to-digital conversion.  
+%\item Designed an Arduino Uno board in Altium Designer, including schematic capture and PCB routing.  
+
+
+
+%\item Designed an arduino Uno board using Altium Designer 
+%including schematics drawing and routing
+\end{itemize}
+\divider
+
+\end{document}
